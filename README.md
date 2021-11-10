@@ -1,1 +1,1 @@
-# bobrovskyi.goit.markup-js-06
+# bobrovskyi.goit.js-06
