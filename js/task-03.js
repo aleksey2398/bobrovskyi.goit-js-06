@@ -18,11 +18,12 @@ const gallery = document.querySelector(".gallery");
 
 const picture = images.map(image => {
   return `<li><img src = "${image.url}" alt = "${image.alt}" width = 300></li>`
-});
+}).join("");
+
 gallery.insertAdjacentHTML("beforeend", picture);
 console.log(gallery);
 
 gallery.setAttribute(
   "style",
-  "display: flex; list-style: none; justify-content: center"
+  "display: flex; list-style: none; justify-content: center;"
 );
