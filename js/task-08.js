@@ -10,7 +10,13 @@ event.preventDefault();
         Email: `${email.value}`,
         Password: `${password.value}`
     }
-    console.log(form);
-    event.currentTarget.reset();
+    if (email.value && password.value) {
+        
+        console.log(form);
+    }
+    if (email.value && password.value) {
+        event.currentTarget.reset();
+    }
+
  }
  

@@ -13,10 +13,16 @@ const images = [
   },
 ];
 
-const newImages = images.map(image => `<li><img src=${image.url} alt=${image.alt} width=300
-style="margin: 20px"></li>`).join("");
 const gallery = document.querySelector(".gallery");
-gallery.style.display = "flex";
-gallery.style.flexWrap = "wrap";
-gallery.style.listStyle = "none";
-document.querySelector(".gallery").insertAdjacentHTML("beforeend", newImages);
+
+
+const picture = images.map(image => {
+  return `<li><img src = "${image.url}" alt = "${image.alt}" width = 300></li>`
+});
+gallery.insertAdjacentHTML("beforeend", picture);
+console.log(gallery);
+
+gallery.setAttribute(
+  "style",
+  "display: flex; list-style: none; justify-content: center"
+);
